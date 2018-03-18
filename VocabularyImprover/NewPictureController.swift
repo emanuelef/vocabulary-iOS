@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  NewPictureController.swift
 //  VocabularyImprover
 //
 //  Created by Emanuele Fumagalli on 17/03/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController,
+class NewPictureController: UIViewController,
 UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     var imagePickerController : UIImagePickerController!
@@ -23,6 +23,10 @@ UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     }
     
     @IBAction func onSendPicture(_ sender: Any) {
+        guard imageView.image != nil else {
+            print("No picture to send yet")
+            return
+        }
     }
     
     override func viewDidLoad() {
