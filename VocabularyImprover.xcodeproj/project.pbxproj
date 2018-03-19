@@ -15,6 +15,13 @@
 		A8ADE8C5205D490F00B5FA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8ADE8C3205D490F00B5FA7E /* LaunchScreen.storyboard */; };
 		A8ADE8D0205D490F00B5FA7E /* VocabularyImproverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ADE8CF205D490F00B5FA7E /* VocabularyImproverTests.swift */; };
 		A8ADE8DB205D490F00B5FA7E /* VocabularyImproverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ADE8DA205D490F00B5FA7E /* VocabularyImproverUITests.swift */; };
+		A8ADE8EA205F189400B5FA7E /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8ADE8E8205F189300B5FA7E /* AWSCore.framework */; };
+		A8ADE8EB205F189400B5FA7E /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8ADE8E8205F189300B5FA7E /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8ADE8EC205F189400B5FA7E /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8ADE8E9205F189300B5FA7E /* AWSS3.framework */; };
+		A8ADE8ED205F189400B5FA7E /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8ADE8E9205F189300B5FA7E /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8ADE8F1205F1DE100B5FA7E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ADE8F0205F1DE100B5FA7E /* Constant.swift */; };
+		A8ADE8F320607FB700B5FA7E /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8ADE8F220607FB600B5FA7E /* AWSCognito.framework */; };
+		A8ADE8F420607FB700B5FA7E /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8ADE8F220607FB600B5FA7E /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A8ADE8EE205F189400B5FA7E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A8ADE8F420607FB700B5FA7E /* AWSCognito.framework in Embed Frameworks */,
+				A8ADE8ED205F189400B5FA7E /* AWSS3.framework in Embed Frameworks */,
+				A8ADE8EB205F189400B5FA7E /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A8ADE8B5205D490F00B5FA7E /* VocabularyImprover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocabularyImprover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ADE8B8205D490F00B5FA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +72,10 @@
 		A8ADE8D6205D490F00B5FA7E /* VocabularyImproverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocabularyImproverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ADE8DA205D490F00B5FA7E /* VocabularyImproverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyImproverUITests.swift; sourceTree = "<group>"; };
 		A8ADE8DC205D490F00B5FA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8ADE8E8205F189300B5FA7E /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Carthage/Build/iOS/AWSCore.framework; sourceTree = "<group>"; };
+		A8ADE8E9205F189300B5FA7E /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = Carthage/Build/iOS/AWSS3.framework; sourceTree = "<group>"; };
+		A8ADE8F0205F1DE100B5FA7E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A8ADE8F220607FB600B5FA7E /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = Carthage/Build/iOS/AWSCognito.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8ADE8F320607FB700B5FA7E /* AWSCognito.framework in Frameworks */,
+				A8ADE8EC205F189400B5FA7E /* AWSS3.framework in Frameworks */,
+				A8ADE8EA205F189400B5FA7E /* AWSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +109,9 @@
 		A8ADE8AC205D490E00B5FA7E = {
 			isa = PBXGroup;
 			children = (
+				A8ADE8F220607FB600B5FA7E /* AWSCognito.framework */,
+				A8ADE8E8205F189300B5FA7E /* AWSCore.framework */,
+				A8ADE8E9205F189300B5FA7E /* AWSS3.framework */,
 				A8ADE8B7205D490F00B5FA7E /* VocabularyImprover */,
 				A8ADE8CE205D490F00B5FA7E /* VocabularyImproverTests */,
 				A8ADE8D9205D490F00B5FA7E /* VocabularyImproverUITests */,
@@ -106,6 +139,7 @@
 				A8ADE8C1205D490F00B5FA7E /* Assets.xcassets */,
 				A8ADE8C3205D490F00B5FA7E /* LaunchScreen.storyboard */,
 				A8ADE8C6205D490F00B5FA7E /* Info.plist */,
+				A8ADE8F0205F1DE100B5FA7E /* Constant.swift */,
 			);
 			path = VocabularyImprover;
 			sourceTree = "<group>";
@@ -138,6 +172,8 @@
 				A8ADE8B1205D490E00B5FA7E /* Sources */,
 				A8ADE8B2205D490E00B5FA7E /* Frameworks */,
 				A8ADE8B3205D490E00B5FA7E /* Resources */,
+				A8ADE8EE205F189400B5FA7E /* Embed Frameworks */,
+				A8ADE8EF205F18AC00B5FA7E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,6 +293,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A8ADE8EF205F18AC00B5FA7E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8ADE8B1205D490E00B5FA7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +317,7 @@
 				A8ADE8BD205D490F00B5FA7E /* AllWordsController.swift in Sources */,
 				A8ADE8B9205D490F00B5FA7E /* AppDelegate.swift in Sources */,
 				A8ADE8BB205D490F00B5FA7E /* NewPictureController.swift in Sources */,
+				A8ADE8F1205F1DE100B5FA7E /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +485,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NWQR53F32D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VocabularyImprover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emafuma.VocabularyImprover;
@@ -447,6 +504,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NWQR53F32D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VocabularyImprover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emafuma.VocabularyImprover;
