@@ -53,7 +53,7 @@ UINavigationControllerDelegate {
         
         let rect = view.bounds
         
-        let drawText = "First try!"
+        let drawText = "Sometimes a thousand twangling instruments"
         
         drawText.draw(in: rect, withAttributes: textFontAttributes)
         
